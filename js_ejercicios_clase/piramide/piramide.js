@@ -1,13 +1,16 @@
-function mostrarNumeros(){
-    function newFunction() {
-        for (var numero = 9; numero > 0; numero--) {
-            var listaNum = null;
-            for (var i = 0; i < 9; i++) {
-                listaNum += numero;
-                document.write(listaNum /n);
-
-            }
-            document.write(listaNum /n);
+function mostrarNumeros() { 
+    var htmlElement = document.getElementById("text");
+    var text = "";
+    for (var numero = 9; numero > 0; numero--) {
+        for (var i = 0; i < 9 - numero; i++) {
+            text += numero.toString();
         }
+        text += "<br>";
     }
+    htmlElement.innerHTML = text;
 }
+
+function textClicked() {
+    alert("Text was clicked!");
+}
+
