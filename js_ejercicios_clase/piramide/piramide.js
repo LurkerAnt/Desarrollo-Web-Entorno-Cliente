@@ -1,12 +1,17 @@
-function mostrarNumeros() { 
+function mostrarNumeros(inputId) { 
     var htmlElement = document.getElementById("text");
-    var text = "";
-    for (var numero = 9; numero > 0; numero--) {
-        for (var i = 0; i < 9 - numero; i++) {
-            text += numero.toString();
+    var input = document.getElementById(inputId);
+    if (input.value) {
+        var numeroInput = parseInt(input.value, 10);
+        var text = "";
+        for (var numero = numeroInput; numero > 0; numero--) {
+            for (var i = 0; i < numero; i++) {
+                text += numero.toString();
+            }
+            text += "<br>";
         }
-        text += "<br>";
     }
+    
     htmlElement.innerHTML = text;
 }
 
