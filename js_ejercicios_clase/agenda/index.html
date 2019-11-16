@@ -1,0 +1,29 @@
+<!--Valiéndote de Arrays, crea una estructura en la que puedas almacenar eventos 
+    que nos permitan establecer un órden cronológico de tal forma que se incluya, 
+    para cada uno de ellos, el año, el mes y el día en los que estén definidos dichos eventos.
+Se sugiere que se utilice un array multidimensional que permita acceder a cada uno de ellos fácilmente.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="actividad" id="actividad">
+        <input type="date" name="fecha" id="fecha">
+        <button type="button" onclick="recordDate()">Record Date</button>
+        <button type="button" onclick="showAgenda()">Show Agenda</button>
+    </form>
+    <br>
+    <div id="mostrarAgenda"></div>
+</body>
+
+</html>
