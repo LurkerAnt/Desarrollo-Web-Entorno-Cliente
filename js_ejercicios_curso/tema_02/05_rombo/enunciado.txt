@@ -1,0 +1,17 @@
+    1. Haz un script que dibuje un semirombo a partir de los datos caracter
+     y numElementos de tal forma que si, por ejemplo introducimos los siguientes valores, 
+     el valor representado sea el que se muestra a continuación:
+     
+caracter : “?”
+numElementos : “4”
+
+?
+??
+???
+????
+???
+??
+?
+
+
+MODIFICADO HE HECHO QUE SALGA UN ROMBO COMPLETO.

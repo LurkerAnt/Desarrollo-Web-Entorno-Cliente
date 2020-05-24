@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Numeros Primos</title>
+</head>
+<body>
+     <!--
+        /** En onsubmit si se retorna el valor "false", 
+        * el formulario deja de hacer su acción por defecto
+        * que es recargar la pagina haciendo llamada al action.
+        */
+    -->
+    <form onsubmit="EsNumeroPrimo(); return false;">
+        <input type="number" name="numero" id="numero" placeholder="Numero">
+        <button type="submit">Dime si es Primo</button>
+    </form>
+    
+    <div id="text"></div>
+</body>
+</html>

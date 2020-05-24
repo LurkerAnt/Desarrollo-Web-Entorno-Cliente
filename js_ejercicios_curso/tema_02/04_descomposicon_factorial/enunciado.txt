@@ -1,0 +1,3 @@
+Escribe un script que realice la descomposición factorial
+ del valor de una variable llamada numero 
+(que se conviene que contiene un número entero positivo mayor que 1).

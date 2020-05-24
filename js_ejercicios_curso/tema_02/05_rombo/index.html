@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Rombo</title>
+</head>
+<body>
+    <!--
+        /** En onsubmit si se retorna el valor "false", el formulario deja de hacer su acción por defecto
+        * que es recargar la pagina haciendo llamada al action.
+        */
+    -->
+    <form onsubmit="mostrarRombo(); return false;">
+        <h3>Introduce un caracter y un numero().</h3>
+        Caracter:
+        <input type="text" name="caracter" id="caracter" maxlength="1">
+        <input type="number" name="numero" id="numero" placeholder="numero">
+        <button type="submit">Mostrar Rombo</button>
+    </form>
+    <div id="text">
+    </div>
+
+    
+</body>
+</html>

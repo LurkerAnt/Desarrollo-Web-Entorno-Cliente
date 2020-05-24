@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            border: 1px solid black;
+            text-align: center;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="columns">
+    <input type="number" id="rows">
+    <button onclick="createTable()">Create table</button>
+    <div id="table-container">
+
+    </div>
+
+    <script>
+
+        // metodos de funcionalidad para no llamar todo el rato a document y quede limpio el codigo
+        function createElement(tag) {
+            return document.createElement(tag);
+        }
+        function getHtmlElement(id) {
+            return document.getElementById(id);
+        }
+        function getValueAsNumber(id) { // devuelve el value de un input como Number pasandole el id del elemento.
+            return Number(getHtmlElement(id).value);
+        }
+        function createTable() {
+            const divContainer = getHtmlElement("table-container");
+            divContainer.innerHTML = "";
+            // crea el tag html que le pases
+            const table = createElement("table"); // <table></table>
+            divContainer.appendChild(table);
+
+            const columns = getValueAsNumber("columns");
+            const rows = getValueAsNumber("rows");
+            for (let row = 0; row < rows; row++) {
+                const tr = createElement("tr");
+                for (let column = 0; column < columns; column++) {
+                    const td = createElement("td");
+                    td.innerHTML = `${row + 1}:${column + 1}`;
+                    // mete un hijo de ese elemento que hemos creado con createElement en el tag de el padre.
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
+            }
+        }
+    </script>
+</body>
+</html>

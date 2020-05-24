@@ -1,0 +1,12 @@
+    1. Haz un script que escriba una pirámide inversa de los números del 1 al número entero que indique el usuario de la siguiente forma : (suponiendo que indica 9).
+999999999
+88888888
+7777777
+666666
+55555
+4444
+333
+22
+1
+
+Nota: en caso de que se introduzca un número inferior a 0 o superior a 40, tendrá que pedirle al usuario que introduzca un número dentro del rango 1 - 40.

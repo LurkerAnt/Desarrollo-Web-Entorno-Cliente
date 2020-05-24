@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Piramide</title>
+</head>
+<body>
+    <!--
+        /** En onsubmit si se retorna el valor "false", el formulario deja de hacer su acción por defecto
+        * que es recargar la pagina haciendo llamada al action.
+        */
+    -->
+    <form onsubmit="MostrarNumero(); return false;">
+        <input type="number" name="numero" id="numero">
+        <button type="submit">Mostrar Piramide</button>
+    </form>
+    <div id="text">
+    </div>
+
+    
+</body>
+</html>

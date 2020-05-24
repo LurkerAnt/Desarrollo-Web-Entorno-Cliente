@@ -1,0 +1,7 @@
+
+UT 03 Agenda
+
+Valiéndote de Arrays, crea una estructura en la que puedas almacenar eventos 
+que nos permitan establecer un órden cronológico de tal forma que se incluya, para cada uno de ellos,
+ el año, el mes y el día en los que estén definidos dichos eventos.
+Se sugiere que se utilice un array multidimensional que permita acceder a cada uno de ellos fácilmente.
